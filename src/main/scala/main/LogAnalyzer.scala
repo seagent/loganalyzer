@@ -9,8 +9,8 @@ object LogAnalyzer {
   private val CPU_USAGE_PATTERN = """Load: (.*) \(""".r
 
   def analyze(filePath: String): Unit = {
-    println("\n\n---------------------------------------------------------------\n")
-    println(s"Calculation for [$filePath] has started.")
+    println(s"\n\nCalculation for [$filePath] has started.")
+    println("--------------------------------------------------------------------------------------------------------\n")
     val qpCollector = new MetricsCollector(QUERY_PROCESSING_PATTERN, "query processing time")
     val rcCollector = new MetricsCollector(RESULT_CHANGE_PATTERN, "change notification time")
     val memoryCollector = new MetricsCollector(MEMORY_USAGE_PATTERN, "memory usage")
@@ -27,8 +27,8 @@ object LogAnalyzer {
     rcCollector.printResult()
     memoryCollector.printResult()
     cpuCollector.printResult()
+    println("\n--------------------------------------------------------------------------------------------------------")
     println(s"Calculation for [$filePath] has ended.")
-    println("---------------------------------------------------------------")
   }
 
 }
