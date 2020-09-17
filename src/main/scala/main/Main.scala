@@ -23,7 +23,7 @@ object Main {
   }
 
   private def getFilePathFor(dataSetId: Int, nodeId: Int): String = {
-    s"/home/burak/Development/Monarch-Results/$dataSetId/MonARCh-$dataSetId-Node-$nodeId.log"
+    s"Monarch-Evaluation-Results/$dataSetId/MonARCh-$dataSetId-Node-$nodeId.log"
   }
 
 }

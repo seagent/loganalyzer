@@ -15,7 +15,7 @@ object LogAnalyzer {
     val rcCollector = new MetricsCollector(RESULT_CHANGE_PATTERN, "change notification time")
     val memoryCollector = new MetricsCollector(MEMORY_USAGE_PATTERN, "memory usage")
     val cpuCollector = new MetricsCollector(CPU_USAGE_PATTERN, "cpu usage")
-    val source = Source.fromFile(filePath)
+    val source = Source.fromResource(filePath)
     for (line <- source.getLines()) {
       qpCollector.calculate(line)
       rcCollector.calculate(line)
