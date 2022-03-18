@@ -27,7 +27,7 @@ bin/
 .cache
 
 # intellij idea
-*.log
+#*.log
 *.iml
 *.ipr
 *.iws
