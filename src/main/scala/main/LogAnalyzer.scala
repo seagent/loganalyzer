@@ -25,14 +25,35 @@ object LogAnalyzer {
     println(s"Calculation for [$folderPath] has ended.")
   }
 
-  def analyzeNetworkCost(folderPath: String): Unit = {
+  def analyzeNetworkCost(folderPath: String, queryPerMinute: Int, totalQueryCount: Int): Unit = {
     val firstSource = Source.fromResource(folderPath + "MonARCh-Node-1.log")
     val secondSource = Source.fromResource(folderPath + "MonARCh-Node-2.log")
     val messageLogs = firstSource.getLines().toList.filter(_.contains(MESSAGE_SENT_THROUGH_NETWORK_PATTERN)) ::: secondSource.getLines().toList.filter(_.contains(MESSAGE_SENT_THROUGH_NETWORK_PATTERN))
     val messageSizeCollector = new MetricsCollector(MESSAGE_SIZE_PATTERN, "Overall Message Size")
     messageLogs.foreach(messageSizeCollector.calculate)
-    messageSizeCollector.multiplyBy(100)
-    messageSizeCollector.printByteFormattedResult()
+    printNetworkStatistics(queryPerMinute, totalQueryCount, messageSizeCollector)
+  }
+
+  private def printNetworkStatistics(queryPerMinute: Int, totalQueryCount: Int, messageSizeCollector: MetricsCollector) = {
+    val queryPerSecond = queryPerMinute.toDouble / 60
+    val avgMessageSizePerQuery = (messageSizeCollector.sum / messageSizeCollector.count)
+    val totalMessageSizePerSecond = messageSizeCollector.sum * queryPerSecond
+    val messageCountPerSecond = messageSizeCollector.count * queryPerSecond
+
+    val totalMessageSize = messageSizeCollector.sum * totalQueryCount
+    val totalMessageCount = messageSizeCollector.count * totalQueryCount
+
+    val formattedAvg = formatByteValue(avgMessageSizePerQuery)
+    val formattedMax = formatByteValue(messageSizeCollector.max)
+    val formattedTotalMessageSizePerSecond = formatByteValue(totalMessageSizePerSecond)
+    val formattedTotalMessageSize = formatByteValue(totalMessageSize)
+
+    println(s"Average message size per query sent through the network: [$formattedAvg]" +
+      s"\nMax message size per query sent through the network: [$formattedMax]" +
+      s"\nTotal message size per second sent through the network: [$formattedTotalMessageSizePerSecond]" +
+      s"\nTotal message count per second sent through the network: [$messageCountPerSecond]" +
+      s"\nTotal message size sent through the network: [$formattedTotalMessageSize]" +
+      s"\nTotal message count sent through the network: [$totalMessageCount]")
   }
 
   private def analyzeServerResources(filePath: String) = {
@@ -61,4 +82,22 @@ object LogAnalyzer {
     }
     source.close()
   }
+
+  def formatByteValue(sizeInBytes: Double): String = {
+    val sizeInText =
+      if (sizeInBytes >= Constants.Kilobytes && sizeInBytes < Constants.Megabytes) {
+        sizeInBytes.toFloat / Constants.Kilobytes + " KB"
+      }
+      else if (sizeInBytes >= Constants.Megabytes && sizeInBytes < Constants.Gigabytes) {
+        sizeInBytes.toFloat / Constants.Megabytes + " MB"
+      }
+      else if (sizeInBytes >= Constants.Gigabytes) {
+        sizeInBytes.toFloat / Constants.Gigabytes + " GB"
+      }
+      else {
+        sizeInBytes + " B"
+      }
+    sizeInText
+  }
+
 }

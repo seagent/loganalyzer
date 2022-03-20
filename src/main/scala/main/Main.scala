@@ -7,8 +7,9 @@ object Main {
 
   def main(args: Array[String]): Unit = {
     //LogAnalyzer.analyzeLogFiles(getFilePathFor("High-Selective-Query","200","500-Query"))
-    LogAnalyzer.analyzeNetworkCost("analyzing-network-logs/LEAST/ALL/")
-    LogAnalyzer.analyzeNetworkCost("analyzing-network-logs/MOST/300/")
+    LogAnalyzer.analyzeNetworkCost("analyzing-network-logs/LEAST/ALL/",10,100)
+    println("-------------------------------------------------------------")
+    LogAnalyzer.analyzeNetworkCost("analyzing-network-logs/MOST/300/",700, 7000)
   }
 
   private def getFilePathFor(dataSetId: Int, nodeId: Int): String = {
