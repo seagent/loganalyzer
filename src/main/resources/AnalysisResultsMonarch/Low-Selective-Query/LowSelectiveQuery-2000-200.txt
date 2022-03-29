@@ -1,0 +1,34 @@
+
+Calculation for [/Users/burakyonyul/Development/Evaluation-Results-Monarch/Low-Selective-Query/2000/200-Query/] has started.
+--------------------------------------------------------------------------------------------------------
+
+Results for Node-1
+Average query processing time: [4600.979797979798], Max query processing time: [8503.0] with sum: [455497.0] and count: [99]
+Average change notification time: [2046.7800829875519], Max change notification time: [6542.0] with sum: [493274.0] and count: [241]
+Average memory usage: [8088.447828227469], Max memory usage: [14742.001960754395] with sum: [5427348.492740631] and count: [671]
+Average cpu usage: [1.3061698956780938], Max cpu usage: [4.1] with sum: [876.440000000001] and count: [671]
+
+--------------------------------------------------------------------------------------------------------
+Results for Node-2
+Average query processing time: [4491.831683168317], Max query processing time: [8233.0] with sum: [453675.0] and count: [101]
+Average change notification time: [1997.5289256198348], Max change notification time: [6445.0] with sum: [483402.0] and count: [242]
+Average memory usage: [8559.719781223172], Max memory usage: [13925.24925994873] with sum: [5717892.813857079] and count: [668]
+Average cpu usage: [1.373802395209584], Max cpu usage: [3.79] with sum: [917.7000000000021] and count: [668]
+
+--------------------------------------------------------------------------------------------------------
+Evaluation Information
+Query Count per Minute: 20
+Actor Count per Query: 7
+Total Query Count: 200
+Total Actor Count: 1400
+
+--------------------------------------------------------------------------------------------------------
+Calculation for [/Users/burakyonyul/Development/Evaluation-Results-Monarch/Low-Selective-Query/2000/200-Query/] has ended.
+--------------------------------------------------------------------------------------------------------
+Average message size per query sent through the network: [2.1184108 MB]
+Max message size per query sent through the network: [8.342018 MB]
+Total message size per second sent through the network: [9.885918 MB]
+Total message count per second sent through the network: [4.666666666666666]
+Total message size sent through the network: [5.79253 GB]
+Total message count sent through the network: [2800]
+--------------------------------------------------------------------------------------------------------

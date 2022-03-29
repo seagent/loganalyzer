@@ -1,0 +1,34 @@
+
+Calculation for [/Users/burakyonyul/Development/Evaluation-Results-Monarch/Middle-Selective-Query/3000/400-Query/] has started.
+--------------------------------------------------------------------------------------------------------
+
+Results for Node-1
+Average query processing time: [17714.518348623853], Max query processing time: [30406.0] with sum: [3861765.0] and count: [218]
+Average change notification time: [4915.913096695226], Max change notification time: [18415.0] with sum: [4016301.0] and count: [817]
+Average memory usage: [12097.779519442032], Max memory usage: [15191.100992202759] with sum: [9206410.214295387] and count: [761]
+Average cpu usage: [2.6488567674113], Max cpu usage: [9.8] with sum: [2015.7799999999993] and count: [761]
+
+--------------------------------------------------------------------------------------------------------
+Results for Node-2
+Average query processing time: [15116.093406593407], Max query processing time: [26127.0] with sum: [2751129.0] and count: [182]
+Average change notification time: [4297.558823529412], Max change notification time: [18307.0] with sum: [2922340.0] and count: [680]
+Average memory usage: [10382.225643658103], Max memory usage: [16892.400317192078] with sum: [7859344.812249184] and count: [757]
+Average cpu usage: [2.641043593130777], Max cpu usage: [10.77] with sum: [1999.2699999999984] and count: [757]
+
+--------------------------------------------------------------------------------------------------------
+Evaluation Information
+Query Count per Minute: 100
+Actor Count per Query: 7
+Total Query Count: 400
+Total Actor Count: 2800
+
+--------------------------------------------------------------------------------------------------------
+Calculation for [/Users/burakyonyul/Development/Evaluation-Results-Monarch/Middle-Selective-Query/3000/400-Query/] has ended.
+--------------------------------------------------------------------------------------------------------
+Average message size per query sent through the network: [1.6423405 MB]
+Max message size per query sent through the network: [6.547394 MB]
+Total message size per second sent through the network: [38.321278 MB]
+Total message count per second sent through the network: [23.333333333333336]
+Total message size sent through the network: [8.98155 GB]
+Total message count sent through the network: [5600]
+--------------------------------------------------------------------------------------------------------

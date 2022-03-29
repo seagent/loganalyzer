@@ -1,0 +1,35 @@
+
+Calculation for [/Users/burakyonyul/Development/Evaluation-Results-Monarch/Low-Selective-Query/4000/100-Query/] has started.
+--------------------------------------------------------------------------------------------------------
+
+Results for Node-1
+Average query processing time: [5802.603448275862], Max query processing time: [11494.0] with sum: [336551.0] and count: [58]
+Average change notification time: [2843.626506024096], Max change notification time: [9683.0] with sum: [472042.0] and count: [166]
+Average memory usage: [8327.409576812819], Max memory usage: [12916.772455215454] with sum: [5904133.389960289] and count: [709]
+Average cpu usage: [1.6900705218617755], Max cpu usage: [4.09] with sum: [1198.2599999999989] and count: [709]
+
+--------------------------------------------------------------------------------------------------------
+Results for Node-2
+Average query processing time: [5615.785714285715], Max query processing time: [11870.0] with sum: [235863.0] and count: [42]
+Average change notification time: [2413.684210526316], Max change notification time: [7020.0] with sum: [275160.0] and count: [114]
+Average memory usage: [7293.942776551301], Max memory usage: [12910.363959312439] with sum: [5134935.714692116] and count: [704]
+Average cpu usage: [1.7497585227272727], Max cpu usage: [3.15] with sum: [1231.83] and count: [704]
+
+--------------------------------------------------------------------------------------------------------
+Evaluation Information
+Query Count per Minute: 10
+Actor Count per Query: 7
+Total Query Count: 100
+Total Actor Count: 700
+
+--------------------------------------------------------------------------------------------------------
+Calculation for [/Users/burakyonyul/Development/Evaluation-Results-Monarch/Low-Selective-Query/4000/100-Query/] has ended.
+--------------------------------------------------------------------------------------------------------
+Average message size per query sent through the network: [4.2393746 MB]
+Max message size per query sent through the network: [16.66713 MB]
+Total message size per second sent through the network: [9.891873 MB]
+Total message count per second sent through the network: [2.333333333333333]
+Total message size sent through the network: [5.7960196 GB]
+Total message count sent through the network: [1400]
+--------------------------------------------------------------------------------------------------------
+

@@ -48,12 +48,14 @@ object LogAnalyzer {
     val formattedTotalMessageSizePerSecond = formatByteValue(totalMessageSizePerSecond)
     val formattedTotalMessageSize = formatByteValue(totalMessageSize)
 
+    println("--------------------------------------------------------------------------------------------------------")
     println(s"Average message size per query sent through the network: [$formattedAvg]" +
       s"\nMax message size per query sent through the network: [$formattedMax]" +
       s"\nTotal message size per second sent through the network: [$formattedTotalMessageSizePerSecond]" +
       s"\nTotal message count per second sent through the network: [$messageCountPerSecond]" +
       s"\nTotal message size sent through the network: [$formattedTotalMessageSize]" +
       s"\nTotal message count sent through the network: [$totalMessageCount]")
+    println("--------------------------------------------------------------------------------------------------------")
   }
 
   private def analyzeServerResources(filePath: String) = {
