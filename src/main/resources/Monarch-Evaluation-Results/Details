@@ -1,8 +1,0 @@
-*** 500 >>> Queries have been sent by 100. Max heap 7 GB for all nodes
-*** 1000 >>> Queries have been sent by 200. Max heap 12 GB for node 1 & 2, 8 GB for node 4
-*** 1500 >>> Queries have been sent by 300. Max heap 15 GB for Node 1 & 2, 10 GB for Node 4
-*** 2000 >>> Queries have been sent by 400. Max heap 25 GB for Node 1 & 2, 10 GB for Node 4
-*** 2500 >>> Queries have been sent by 500. Max heap 30 GB for Node 1 & 2, 10 GB for Node 4
-*** 3000 >>> Queries have been sent by 300. Max heap 30 GB for Node 1 & 2, 10 GB for Node 4, 40 secs wait for driver
-----------------------------------------------------------------------------------------------------------------------
-*** 3500 >>> Queries have been sent by 350. Max heap 30 GB for Node 1 & 2, 10 GB for Node 4, 90 secs wait for driver, failed because of long wait of aeron transport driver and memory overload

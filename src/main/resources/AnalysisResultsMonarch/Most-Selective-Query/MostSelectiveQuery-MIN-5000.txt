@@ -1,34 +1,34 @@
 
-Calculation for [/Users/burakyonyul/Development/Evaluation-Results-Monarch/Most-Selective-Query/200/3000-Query/] has started.
+Calculation for [/Users/burakyonyul/Documents/Monarch/Evaluation-Results-Monarch/Most-Selective-Query/MIN/5000-Query/] has started.
 --------------------------------------------------------------------------------------------------------
 
 Results for Node-1
-Average query processing time: [18224.134664948455], Max query processing time: [37339.0] with sum: [2.8283857E7] and count: [1552]
-Average change notification time: [3476.3400838998987], Max change notification time: [23364.0] with sum: [2.4031939E7] and count: [6913]
-Average memory usage: [8573.495665767607], Max memory usage: [14215.675000190735] with sum: [7673278.620862007] and count: [895]
-Average cpu usage: [3.2019217877095008], Max cpu usage: [14.65] with sum: [2865.720000000003] and count: [895]
+Average query processing time: [6657.114571318723], Max query processing time: [14857.0] with sum: [1.7315155E7] and count: [2601]
+Average change notification time: [1522.0528980446927], Max change notification time: [10467.0] with sum: [8718319.0] and count: [5728]
+Average memory usage: [8177.4738428511755], Max memory usage: [13645.62020111084] with sum: [6263944.963624001] and count: [766]
+Average cpu usage: [2.6184986945169766], Max cpu usage: [10.36] with sum: [2005.770000000004] and count: [766]
 
 --------------------------------------------------------------------------------------------------------
 Results for Node-2
-Average query processing time: [14968.539364640885], Max query processing time: [26200.0] with sum: [2.1674445E7] and count: [1448]
-Average change notification time: [5754.156901688183], Max change notification time: [24432.0] with sum: [3.4766616E7] and count: [6042]
-Average memory usage: [10321.616420625172], Max memory usage: [14531.182053565979] with sum: [9217203.463618279] and count: [893]
-Average cpu usage: [3.5098320268756993], Max cpu usage: [19.09] with sum: [3134.2799999999993] and count: [893]
+Average query processing time: [6158.213422259275], Max query processing time: [15468.0] with sum: [1.4773554E7] and count: [2399]
+Average change notification time: [1876.749099184525], Max change notification time: [11165.0] with sum: [9896098.0] and count: [5273]
+Average memory usage: [7077.94912769478], Max memory usage: [13991.124629974365] with sum: [5386319.286175728] and count: [761]
+Average cpu usage: [2.5372667542706937], Max cpu usage: [9.31] with sum: [1930.8599999999979] and count: [761]
 
 --------------------------------------------------------------------------------------------------------
 Evaluation Information
 Query Count per Minute: 1000
 Actor Count per Query: 7
-Total Query Count: 3000
-Total Actor Count: 21000
+Total Query Count: 5000
+Total Actor Count: 35000
 
 --------------------------------------------------------------------------------------------------------
-Calculation for [/Users/burakyonyul/Development/Evaluation-Results-Monarch/Most-Selective-Query/200/3000-Query/] has ended.
+Calculation for [/Users/burakyonyul/Documents/Monarch/Evaluation-Results-Monarch/Most-Selective-Query/MIN/5000-Query/] has ended.
 --------------------------------------------------------------------------------------------------------
-Average message size per query sent through the network: [164.65346 KB]
-Max message size per query sent through the network: [575.28125 KB]
-Total message size per second sent through the network: [37.518692 MB]
+Average message size per query sent through the network: [59.595425 KB]
+Max message size per query sent through the network: [288.84375 KB]
+Total message size per second sent through the network: [13.579686 MB]
 Total message count per second sent through the network: [233.33333333333334]
-Total message size sent through the network: [6.5950828 GB]
-Total message count sent through the network: [42000]
+Total message size sent through the network: [3.9784238 GB]
+Total message count sent through the network: [70000]
 --------------------------------------------------------------------------------------------------------
